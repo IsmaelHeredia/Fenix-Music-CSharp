@@ -1,6 +1,6 @@
 # Fenix Music
 
-It is a program to reproduce music and streams made in C# with Telerik.
+This project was made in C# with Telerik to play music and streams.
 
 The program interprets the folders of the system's Music directory as Playlists, when starting the program you can decide whether to generate the playlists at that moment or later in another directory.
 
