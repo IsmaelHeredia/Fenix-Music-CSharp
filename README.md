@@ -180,7 +180,7 @@ They can edit it and change the streams they want.
 
 Some pictures:
 
-![screenshot](https://1.bp.blogspot.com/-Z0onnpoUAZM/YLvtPBPzrdI/AAAAAAAAB7A/SayJn2EgPMk5qMfcJ4-PdXGm5QkuNrmVwCLcBGAsYHQ/s877/fenixmusicc1.jpg)
+![screenshot](https://1.bp.blogspot.com/-636xCnbm49Q/YLvyKn5VrvI/AAAAAAAAB7U/rWNQsYoMiq87ZBLK2wKCAk42qMZVbdMagCLcBGAsYHQ/s877/fenixmusicc1.jpg)
 
 ![screenshot](https://1.bp.blogspot.com/-gQ51h9bTQMY/YLvtSQ-WycI/AAAAAAAAB7E/limK7g2Mb2EYixszOQ-h4U0zK2by5RoFQCLcBGAsYHQ/s877/fenixmusicc2.jpg)
 
