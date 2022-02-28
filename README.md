@@ -1,188 +1,38 @@
 # Fenix Music
 
-This project was made in C# with Telerik to play music and streams.
+It is a program to play music and streams made in C# with Telerik. It uses SQLite as database for configuration.
 
-The program interprets the folders of the system's Music directory as Playlists, when starting the program you can decide whether to generate the playlists at that moment or later in another directory.
+Functions :
 
-The stations.json file must exist in the same directory as the program executable, with this content: 
+* The program interprets the folders of the Music directory of the system as Playlists, when starting the program they can decide if they generate the playlists at that moment or later in another directory.
 
-```
-[
-  {
-    "name": "Alternative Rock",
-    "link": "http://7579.live.streamtheworld.com:80/977_ALTERN_SC",
-    "categories": "Rock"
-  },
-  {
-    "name": "Bulldogs-Radio",
-    "link": "http://198.58.98.83:8062/stream",
-    "categories": "Rock, Heavy Metal"
-  },
-  {
-    "name": "Classic Rock 2",
-    "link": "http://7599.live.streamtheworld.com:80/977_CLASSROCK_SC",
-    "categories": "Rock"
-  },
-  {
-    "name": "Classic Rock Florida HD",
-    "link": "http://198.58.98.83:8258/stream",
-    "categories": "Rock"
-  },
-  {
-    "name": "KNKl Pirate Radio Sturgis",
-    "link": "http://us4.internet-radio.com:8223/stream",
-    "categories": "Rock"
-  },
-  {
-    "name": "Meat Liquor",
-    "link": "http://uk1.internet-radio.com:8011/stream",
-    "categories": "Rock"
-  },
-  {
-    "name": "San Franciscos 70s HITS",
-    "link": "http://198.178.123.17:10922/stream",
-    "categories": "Rock, Oldies"
-  },
-  {
-    "name": "Magic 80s Florida",
-    "link": "http://airspectrum.cdnstream1.com:8018/1606_192",
-    "categories": "Rock, Oldies"
-  },
-  {
-    "name": "Radio Bloodstream",
-    "link": "http://uk1.internet-radio.com:8294/stream",
-    "categories": "Rock, Metal"
-  },
-  {
-    "name": "Hard Rock Radio Live",
-    "link": "http://listen.radionomy.com/hardrockradioliveclassicrock",
-    "categories": "Rock, Classic Rock"
-  },
-  {
-    "name": "#MUSIK.TECHHOUSE (PROGRESSIVE) - WWW.RAUTEMUSIK.FM - 24H MIXED PROGRESSIVE ELECTRO MINIMAL AND MORE!",
-    "link": "http://techhouse-high.rautemusik.fm",
-    "categories": "Techno"
-  },
-  {
-    "name": "Eye Of Destiny Radio",
-    "link": "http://uk6.internet-radio.com:8428/stream",
-    "categories": "Chillout"
-  },
-  {
-    "name": "LOUNGE-RADIO.COM swiss made",
-    "link": "http://77.235.42.90:80/stream",
-    "categories": "Chillout"
-  },
-  {
-    "name": "MoveDaHouse",
-    "link": "http://212.71.250.12:8000/stream",
-    "categories": "House"
-  },
-  {
-    "name": "PARTY VIBE RADIO : ALL THE HITS ALL THE TIME",
-    "link": "http://uk6.internet-radio.com:8124/stream",
-    "categories": "Dance"
-  },
-  {
-    "name": "PARTY VIBE RADIO : AMBIENT + CHILLOUT + RELAXATION",
-    "link": "http://www.partyviberadio.com:8056/stream",
-    "categories": "Meditation"
-  },
-  {
-    "name": "PARTY VIBE RADIO : DUBSTEP + TRAP + BASS",
-    "link": "http://www.partyviberadio.com:8040/stream",
-    "categories": "Dubstep"
-  },
-  {
-    "name": "PARTY VIBE RADIO : TECHNO + HOUSE + TRANCE + ELECTRONIC",
-    "link": "http://www.partyviberadio.com:8046/stream",
-    "categories": "Techno"
-  },
-  {
-    "name": "PulseEDM Dance Music Radio",
-    "link": "http://pulseedm.cdnstream1.com:8124/1373_128",
-    "categories": "Dubstep"
-  },
-  {
-    "name": "Radio Play Emotions",
-    "link": "http://5.39.82.157:8054/stream",
-    "categories": "Dubstep"
-  },
-  {
-    "name": "SOUL CENTRAL RADIO",
-    "link": "http://178.79.158.160:8179/stream",
-    "categories": "Deep House"
-  },
-  {
-    "name": "The Zone- Dublin",
-    "link": "http://uk1.internet-radio.com:8355/stream",
-    "categories": "Alternative"
-  },
-  {
-    "name": "Venice Classic Radio Italia",
-    "link": "http://174.36.206.197:8000/stream",
-    "categories": "Classical"
-  },
-  {
-    "name": "JAZZGROOVE.org",
-    "link": "http://199.180.72.2:8015/stream",
-    "categories": "Jazz"
-  },
-  {
-    "name": "Faymus Radio",
-    "link": "http://uk7.internet-radio.com:8078/stream",
-    "categories": "Rap"
-  },
-  {
-    "name": "HOT 108 JAMZ - #1 FOR HIP HOP - www.hot108.com (a Powerhitz.com station)",
-    "link": "http://hot108jamz.hot108.com:4040",
-    "categories": "Hip Hop"
-  },
-  {
-    "name": "PARTY VIBE RADIO : RAP + HIP HOP + TRAP + DUBSTEP",
-    "link": "http://www.partyviberadio.com:8016/stream",
-    "categories": "Rap, Hip Hop, Trap, Dubstep"
-  },
-  {
-    "name": "The Grammar Club Radio",
-    "link": "http://us4.internet-radio.com:8212/stream",
-    "categories": "Rap"
-  },
-  {
-    "name": "Power 95 Bermuda",
-    "link": "http://us3.internet-radio.com:8026/stream",
-    "categories": "Hip Hop"
-  },
-  {
-    "name": "Pigpen Radio",
-    "link": "http://178.79.158.160:8213/stream",
-    "categories": "Hip Hop"
-  },
-  {
-    "name": "Merge 104.8",
-    "link": "http://212.71.250.12:8040/stream",
-    "categories": "Top40"
-  },
-  {
-    "name": "PopTron: Electro-Pop and Indie Dance Rock [SomaFM]",
-    "link": "http://ice3.somafm.com/poptron-128-mp3",
-    "categories": "Pop"
-  },
-  {
-    "name": "Yabloki Radio",
-    "link": "http://uk6.internet-radio.com:8365/stream",
-    "categories": "Pop"
-  }
-]
-```
+* You can search for music and playlists by name, to confirm the search you have to use the enter key.
 
-They can edit it and change the streams they want. 
+* Stations can be added, edited and deleted.
+
+* It can be configured so that it asks if it is necessary to generate the playlists at the beginning of the program. You can also configure and save the directory that contains the playlists.
+
+* It can be configured so that hotkeys are detected and program playback can be controlled.
+
+* You can import, export, validate the stations. They have to be in json format like the stations.json file included in the program.
+
+The hotkeys are the following:
+
+* F5 : Stop
+
+* F6 : Previous song
+
+* F7 : Play / Pause
+
+* F8 : Next song
+
+* F9 : Enable / Disable repeat song
 
 Some pictures:
 
-![screenshot](https://1.bp.blogspot.com/-636xCnbm49Q/YLvyKn5VrvI/AAAAAAAAB7U/rWNQsYoMiq87ZBLK2wKCAk42qMZVbdMagCLcBGAsYHQ/s877/fenixmusicc1.jpg)
+![screenshot](https://blogger.googleusercontent.com/img/a/AVvXsEhAApkq66r8rKJ8X_COWOyLBkgSgt7tDjsi_Rguj5Od0_A80WRFmLy75lhrMTkUofSfR-XzMHnjgDhup2_19KKC0MOgla9q0M7qVtRumddsDQ4872UYSPEnmiS81Tjru9KoL83692J7ijZH0apT542ndEnYhmrcNfYGW3Yx_VxbfmfukOV3S9HtgI8s=s872)
 
-![screenshot](https://1.bp.blogspot.com/-gQ51h9bTQMY/YLvtSQ-WycI/AAAAAAAAB7E/limK7g2Mb2EYixszOQ-h4U0zK2by5RoFQCLcBGAsYHQ/s877/fenixmusicc2.jpg)
+![screenshot](https://blogger.googleusercontent.com/img/a/AVvXsEg75_CPN4G-RQIv9KDeoWx6rFDhLGJeuoE3ymRnq2ELdo_rZgEEx15w2acAXgFTY6mUsTzoisMdt7J5GOroPu_4j6KZr-tUTsmkqMQdLPsUX03C4LPfGWYqbVRzOEq4dpFqxfMTPY_nhGcUhOL9nooZ7vWjz6AvsBYv94nGriYhKwjO0WEXlCJbPY94=s872)
 
-![screenshot](https://1.bp.blogspot.com/-1DvH1xSvMgw/YLvtXkw_ESI/AAAAAAAAB7I/WHrrFkRh6u0h-BWmKnWbl0OEQz9cFqCJQCLcBGAsYHQ/s877/fenixmusicc3.jpg)
+![screenshot](https://blogger.googleusercontent.com/img/a/AVvXsEj-az7AhLuCeRRv9LfVvbBQULbdqAQmAblnn33jCF12ZKdDF5mdqzGnS9Nti-lUb3XQax6e0q97tPrqQcfmhbKN9RpbHshfq2-zlr3yPRZWGo5iQCC6IDiamSJHeqpwXSz3ADfU2AqKuHCBv0TnFLWSepmAs2WzrCxabZsdurksLLBMv9-7_1kuCekO=s872)
 
