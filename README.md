@@ -10,7 +10,7 @@ Functions :
 
 * Stations can be added, edited and deleted.
 
-* It can be configured so that it asks if it is necessary to generate the playlists at the beginning of the program. You can also configure and save the directory that contains the playlists.
+* You can configure and save the directory that contains the playlists.
 
 * It can be configured so that hotkeys are detected and program playback can be controlled.
 
@@ -34,5 +34,4 @@ Some pictures:
 
 ![screenshot](https://blogger.googleusercontent.com/img/a/AVvXsEg75_CPN4G-RQIv9KDeoWx6rFDhLGJeuoE3ymRnq2ELdo_rZgEEx15w2acAXgFTY6mUsTzoisMdt7J5GOroPu_4j6KZr-tUTsmkqMQdLPsUX03C4LPfGWYqbVRzOEq4dpFqxfMTPY_nhGcUhOL9nooZ7vWjz6AvsBYv94nGriYhKwjO0WEXlCJbPY94=s872)
 
-![screenshot](https://blogger.googleusercontent.com/img/a/AVvXsEj-az7AhLuCeRRv9LfVvbBQULbdqAQmAblnn33jCF12ZKdDF5mdqzGnS9Nti-lUb3XQax6e0q97tPrqQcfmhbKN9RpbHshfq2-zlr3yPRZWGo5iQCC6IDiamSJHeqpwXSz3ADfU2AqKuHCBv0TnFLWSepmAs2WzrCxabZsdurksLLBMv9-7_1kuCekO=s872)
-
+![screenshot](https://blogger.googleusercontent.com/img/a/AVvXsEj6zp2NrytHVsfHGZRnvtGag7OFUQL1zI1D7NZGwXnGy8U55a9BqoTKV-xDPN0GPHQvUFBLvhwpGb-LBQ_GKPF9edcVBVu7GdUJD6mjfv7zBlQomEVyqZvFzMelVznG4uDniPrpnPac7CFsQd_s5J01J1ae3EympkoZ6-pK6HhEYrHmV2tcqB2GzWRS=s877)
