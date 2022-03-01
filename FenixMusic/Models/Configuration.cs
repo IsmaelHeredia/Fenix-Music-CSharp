@@ -9,7 +9,6 @@ namespace FenixMusic
     class Configuration
     {
         int id;
-        int ask_update_playlist;
         int hotkeys;
         string directory;
 
@@ -23,19 +22,6 @@ namespace FenixMusic
             set
             {
                 id = value;
-            }
-        }
-
-        public int Ask_update_playlist
-        {
-            get
-            {
-                return ask_update_playlist;
-            }
-
-            set
-            {
-                ask_update_playlist = value;
             }
         }
 

@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHome));
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn8 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "ID");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn9 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn10 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Link");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn11 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Categories");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Fullpath");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "ID");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn8 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Link");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn9 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Categories");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Fullpath");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
             this.visualStudio2012DarkTheme = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
             this.pbCover = new System.Windows.Forms.PictureBox();
             this.ssStatus = new Telerik.WinControls.UI.RadStatusStrip();
@@ -47,10 +47,8 @@
             this.btnExportStations = new Telerik.WinControls.UI.RadButton();
             this.btnImportStations = new Telerik.WinControls.UI.RadButton();
             this.gbConfiguration = new Telerik.WinControls.UI.RadGroupBox();
-            this.btnHotkeyControl = new Telerik.WinControls.UI.RadButton();
             this.btnShowHotkeys = new Telerik.WinControls.UI.RadButton();
             this.cbEnableHotkeys = new Telerik.WinControls.UI.RadCheckBox();
-            this.cbAskUpdatePlaylist = new Telerik.WinControls.UI.RadCheckBox();
             this.gbGeneratePlaylist = new Telerik.WinControls.UI.RadGroupBox();
             this.btnSavePlaylistDirectory = new Telerik.WinControls.UI.RadButton();
             this.btnLoadFolder = new Telerik.WinControls.UI.RadButton();
@@ -91,10 +89,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnImportStations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gbConfiguration)).BeginInit();
             this.gbConfiguration.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHotkeyControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShowHotkeys)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbEnableHotkeys)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbAskUpdatePlaylist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gbGeneratePlaylist)).BeginInit();
             this.gbGeneratePlaylist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSavePlaylistDirectory)).BeginInit();
@@ -161,7 +157,7 @@
             this.pvpSettings.Controls.Add(this.gbStationsConfig);
             this.pvpSettings.Controls.Add(this.gbConfiguration);
             this.pvpSettings.Controls.Add(this.gbGeneratePlaylist);
-            this.pvpSettings.ItemSize = new System.Drawing.SizeF(52F, 24F);
+            this.pvpSettings.ItemSize = new System.Drawing.SizeF(54F, 26F);
             this.pvpSettings.Location = new System.Drawing.Point(205, 4);
             this.pvpSettings.Name = "pvpSettings";
             this.pvpSettings.Size = new System.Drawing.Size(624, 365);
@@ -174,7 +170,7 @@
             this.gbStationsConfig.Controls.Add(this.btnExportStations);
             this.gbStationsConfig.Controls.Add(this.btnImportStations);
             this.gbStationsConfig.HeaderText = "Stations configuration";
-            this.gbStationsConfig.Location = new System.Drawing.Point(20, 269);
+            this.gbStationsConfig.Location = new System.Drawing.Point(20, 232);
             this.gbStationsConfig.Name = "gbStationsConfig";
             this.gbStationsConfig.Size = new System.Drawing.Size(593, 85);
             this.gbStationsConfig.TabIndex = 2;
@@ -214,31 +210,19 @@
             // gbConfiguration
             // 
             this.gbConfiguration.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.gbConfiguration.Controls.Add(this.btnHotkeyControl);
             this.gbConfiguration.Controls.Add(this.btnShowHotkeys);
             this.gbConfiguration.Controls.Add(this.cbEnableHotkeys);
-            this.gbConfiguration.Controls.Add(this.cbAskUpdatePlaylist);
             this.gbConfiguration.HeaderText = "Configuration";
             this.gbConfiguration.Location = new System.Drawing.Point(20, 14);
             this.gbConfiguration.Name = "gbConfiguration";
-            this.gbConfiguration.Size = new System.Drawing.Size(593, 104);
+            this.gbConfiguration.Size = new System.Drawing.Size(593, 72);
             this.gbConfiguration.TabIndex = 1;
             this.gbConfiguration.Text = "Configuration";
             this.gbConfiguration.ThemeName = "VisualStudio2012Dark";
             // 
-            // btnHotkeyControl
-            // 
-            this.btnHotkeyControl.Location = new System.Drawing.Point(284, 70);
-            this.btnHotkeyControl.Name = "btnHotkeyControl";
-            this.btnHotkeyControl.Size = new System.Drawing.Size(110, 24);
-            this.btnHotkeyControl.TabIndex = 3;
-            this.btnHotkeyControl.Text = "Enable";
-            this.btnHotkeyControl.ThemeName = "VisualStudio2012Dark";
-            this.btnHotkeyControl.Click += new System.EventHandler(this.btnHotkeyControl_Click);
-            // 
             // btnShowHotkeys
             // 
-            this.btnShowHotkeys.Location = new System.Drawing.Point(155, 69);
+            this.btnShowHotkeys.Location = new System.Drawing.Point(162, 28);
             this.btnShowHotkeys.Name = "btnShowHotkeys";
             this.btnShowHotkeys.Size = new System.Drawing.Size(110, 24);
             this.btnShowHotkeys.TabIndex = 2;
@@ -248,23 +232,13 @@
             // 
             // cbEnableHotkeys
             // 
-            this.cbEnableHotkeys.Location = new System.Drawing.Point(15, 72);
+            this.cbEnableHotkeys.Location = new System.Drawing.Point(22, 31);
             this.cbEnableHotkeys.Name = "cbEnableHotkeys";
             this.cbEnableHotkeys.Size = new System.Drawing.Size(98, 18);
             this.cbEnableHotkeys.TabIndex = 1;
             this.cbEnableHotkeys.Text = "Enable hotkeys";
             this.cbEnableHotkeys.ThemeName = "VisualStudio2012Dark";
             this.cbEnableHotkeys.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.cbEnableHotkeys_ToggleStateChanged);
-            // 
-            // cbAskUpdatePlaylist
-            // 
-            this.cbAskUpdatePlaylist.Location = new System.Drawing.Point(15, 37);
-            this.cbAskUpdatePlaylist.Name = "cbAskUpdatePlaylist";
-            this.cbAskUpdatePlaylist.Size = new System.Drawing.Size(117, 18);
-            this.cbAskUpdatePlaylist.TabIndex = 0;
-            this.cbAskUpdatePlaylist.Text = "Ask update playlist";
-            this.cbAskUpdatePlaylist.ThemeName = "VisualStudio2012Dark";
-            this.cbAskUpdatePlaylist.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.cbAskUpdatePlaylist_ToggleStateChanged);
             // 
             // gbGeneratePlaylist
             // 
@@ -275,7 +249,7 @@
             this.gbGeneratePlaylist.Controls.Add(this.lblDirectory);
             this.gbGeneratePlaylist.Controls.Add(this.txtDirectoryToScan);
             this.gbGeneratePlaylist.HeaderText = "Generate playlists";
-            this.gbGeneratePlaylist.Location = new System.Drawing.Point(20, 124);
+            this.gbGeneratePlaylist.Location = new System.Drawing.Point(20, 92);
             this.gbGeneratePlaylist.Name = "gbGeneratePlaylist";
             this.gbGeneratePlaylist.Size = new System.Drawing.Size(593, 134);
             this.gbGeneratePlaylist.TabIndex = 0;
@@ -337,7 +311,7 @@
             // pvpStations
             // 
             this.pvpStations.Controls.Add(this.gbStations);
-            this.pvpStations.ItemSize = new System.Drawing.SizeF(52F, 24F);
+            this.pvpStations.ItemSize = new System.Drawing.SizeF(54F, 26F);
             this.pvpStations.Location = new System.Drawing.Point(205, 4);
             this.pvpStations.Name = "pvpStations";
             this.pvpStations.Size = new System.Drawing.Size(624, 365);
@@ -394,16 +368,16 @@
             // 
             this.lvStations.AllowEdit = false;
             this.lvStations.AllowRemove = false;
-            listViewDetailColumn8.HeaderText = "ID";
-            listViewDetailColumn8.Visible = false;
-            listViewDetailColumn9.HeaderText = "Name";
-            listViewDetailColumn10.HeaderText = "Link";
-            listViewDetailColumn11.HeaderText = "Categories";
+            listViewDetailColumn1.HeaderText = "ID";
+            listViewDetailColumn1.Visible = false;
+            listViewDetailColumn7.HeaderText = "Name";
+            listViewDetailColumn8.HeaderText = "Link";
+            listViewDetailColumn9.HeaderText = "Categories";
             this.lvStations.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
+            listViewDetailColumn1,
+            listViewDetailColumn7,
             listViewDetailColumn8,
-            listViewDetailColumn9,
-            listViewDetailColumn10,
-            listViewDetailColumn11});
+            listViewDetailColumn9});
             this.lvStations.ItemSpacing = -1;
             this.lvStations.Location = new System.Drawing.Point(27, 94);
             this.lvStations.Name = "lvStations";
@@ -418,7 +392,7 @@
             // 
             this.pvpHome.Controls.Add(this.gbSongs);
             this.pvpHome.Controls.Add(this.gbPlaylists);
-            this.pvpHome.ItemSize = new System.Drawing.SizeF(52F, 24F);
+            this.pvpHome.ItemSize = new System.Drawing.SizeF(54F, 26F);
             this.pvpHome.Location = new System.Drawing.Point(205, 4);
             this.pvpHome.Name = "pvpHome";
             this.pvpHome.Size = new System.Drawing.Size(624, 365);
@@ -465,13 +439,13 @@
             // 
             this.lvSongs.AllowEdit = false;
             this.lvSongs.AllowRemove = false;
-            listViewDetailColumn1.HeaderText = "Fullpath";
-            listViewDetailColumn1.Visible = false;
-            listViewDetailColumn2.HeaderText = "Name";
-            listViewDetailColumn2.Width = 300F;
+            listViewDetailColumn2.HeaderText = "Fullpath";
+            listViewDetailColumn2.Visible = false;
+            listViewDetailColumn3.HeaderText = "Name";
+            listViewDetailColumn3.Width = 300F;
             this.lvSongs.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn1,
-            listViewDetailColumn2});
+            listViewDetailColumn2,
+            listViewDetailColumn3});
             this.lvSongs.ItemSpacing = -1;
             this.lvSongs.Location = new System.Drawing.Point(18, 71);
             this.lvSongs.Name = "lvSongs";
@@ -523,10 +497,10 @@
             // 
             this.lvPlaylists.AllowEdit = false;
             this.lvPlaylists.AllowRemove = false;
-            listViewDetailColumn3.HeaderText = "Name";
-            listViewDetailColumn3.Width = 215F;
+            listViewDetailColumn4.HeaderText = "Name";
+            listViewDetailColumn4.Width = 215F;
             this.lvPlaylists.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn3});
+            listViewDetailColumn4});
             this.lvPlaylists.ItemSpacing = -1;
             this.lvPlaylists.KeyboardSearchEnabled = true;
             this.lvPlaylists.Location = new System.Drawing.Point(18, 71);
@@ -647,10 +621,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gbConfiguration)).EndInit();
             this.gbConfiguration.ResumeLayout(false);
             this.gbConfiguration.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHotkeyControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShowHotkeys)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbEnableHotkeys)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbAskUpdatePlaylist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gbGeneratePlaylist)).EndInit();
             this.gbGeneratePlaylist.ResumeLayout(false);
             this.gbGeneratePlaylist.PerformLayout();
@@ -717,7 +689,6 @@
         private System.Windows.Forms.NotifyIcon notifyIcon;
         private Telerik.WinControls.UI.RadButton btnLoadFolder;
         private Telerik.WinControls.UI.RadGroupBox gbConfiguration;
-        private Telerik.WinControls.UI.RadCheckBox cbAskUpdatePlaylist;
         private Telerik.WinControls.UI.RadCheckBox cbEnableHotkeys;
         private Telerik.WinControls.UI.RadButton btnShowHotkeys;
         private Telerik.WinControls.UI.RadButton btnSavePlaylistDirectory;
@@ -736,6 +707,5 @@
         private Telerik.WinControls.UI.RadButton btnImportStations;
         private Telerik.WinControls.UI.RadButton btnValidateStations;
         private System.Windows.Forms.Timer tmDetectHotkeys;
-        private Telerik.WinControls.UI.RadButton btnHotkeyControl;
     }
 }

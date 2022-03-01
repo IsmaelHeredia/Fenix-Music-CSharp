@@ -300,7 +300,6 @@ namespace FenixMusic
                 dataAccess.createDB();
 
                 Configuration new_configuration = new Configuration();
-                new_configuration.Ask_update_playlist = 0;
                 new_configuration.Hotkeys = 0;
                 new_configuration.Directory = directory_music;
 
@@ -311,7 +310,6 @@ namespace FenixMusic
 
             Configuration configuration = dataConfiguration.Get(1);
 
-            int ask_update_playlist = configuration.Ask_update_playlist;
             int hotkeys = configuration.Hotkeys;
             string directory = configuration.Directory;
 
@@ -319,14 +317,10 @@ namespace FenixMusic
 
             txtDirectoryToScan.Text = directory;
 
-            if (ask_update_playlist == 1)
-            {
-                cbAskUpdatePlaylist.Checked = true;
-            }
-
             if (hotkeys == 1)
             {
                 cbEnableHotkeys.Checked = true;
+                tmDetectHotkeys.Enabled = true;
             }
 
             axWindowsMediaPlayer.settings.volume = 100;
@@ -531,33 +525,22 @@ namespace FenixMusic
             formStation.Show();
         }
 
-        private void cbAskUpdatePlaylist_ToggleStateChanged(object sender, StateChangedEventArgs args)
-        {
-            Configuration configuration = dataConfiguration.Get(1);
-            if (cbAskUpdatePlaylist.Checked == true)
-            {
-                configuration.Ask_update_playlist = 1;
-            } else
-            {
-                configuration.Ask_update_playlist = 0;
-            }
-            dataConfiguration.Update(configuration);
-            MessageBox.Show("Cb Playlist");
-        }
-
         private void cbEnableHotkeys_ToggleStateChanged(object sender, StateChangedEventArgs args)
         {
             Configuration configuration = dataConfiguration.Get(1);
+
             if (cbEnableHotkeys.Checked == true)
             {
                 configuration.Hotkeys = 1;
+                tmDetectHotkeys.Enabled = true;
             }
             else
             {
                 configuration.Hotkeys = 0;
+                tmDetectHotkeys.Enabled = false;
             }
+
             dataConfiguration.Update(configuration);
-            MessageBox.Show("Cb Hotkeys");
         }
 
         private void btnSavePlaylistDirectory_Click(object sender, EventArgs e)
@@ -565,7 +548,8 @@ namespace FenixMusic
             Configuration configuration = dataConfiguration.Get(1);
             configuration.Directory = txtDirectoryToScan.Text;
             dataConfiguration.Update(configuration);
-            MessageBox.Show("save playlist directory");
+
+            RadMessageBox.Show("Directory saved", program_title, MessageBoxButtons.OK, RadMessageIcon.Info, MessageBoxDefaultButton.Button1);
         }
 
         private void txtSearchPlaylist_KeyDown(object sender, KeyEventArgs e)
@@ -781,20 +765,6 @@ namespace FenixMusic
             {
                 sendStatus("[+] Hotkey repeat executed");
                 repeat_song();
-            }
-        }
-
-        private void btnHotkeyControl_Click(object sender, EventArgs e)
-        {
-            if (btnHotkeyControl.Text == "Enable")
-            {
-                tmDetectHotkeys.Enabled = true;
-                btnHotkeyControl.Text = "Disable";
-            }
-            else
-            {
-                tmDetectHotkeys.Enabled = false;
-                btnHotkeyControl.Text = "Enable";
             }
         }
     }
